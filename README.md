@@ -1,43 +1,99 @@
 # Fyle Frontend Challenge
 
-## Who is this for?
+GitHub Repo Finder is an Angular application that allows users to search for GitHub repositories and view details about the users who own them.
 
-This challenge is meant for candidates who wish to intern at Fyle and work with our engineering team. The candidate should be able to commit to at least 6 months of dedicated time for internship.
 
-## Why work at Fyle?
+### Project Screenshots
+![screenshot1](https://github.com/um500/Fyle-Frontend-development-challenge/blob/master/1%20(2).png)
 
-Fyle is a fast-growing Expense Management SaaS product. We are ~40 strong engineering team at the moment. 
+![screensshot2](https://github.com/um500/Fyle-Frontend-development-challenge/blob/master/2%20(2).png)
 
-We are an extremely transparent organization. Check out our [careers page](https://careers.fylehq.com) that will give you a glimpse of what it is like to work at Fyle. Also, check out our Glassdoor reviews [here](https://www.glassdoor.co.in/Reviews/Fyle-Reviews-E1723235.htm). You can read stories from our teammates [here](https://stories.fylehq.com).
+## Introduction
 
-## Challenge outline
+GitHub Repo Finder is a web application built with Angular that provides users with the ability to search for GitHub repositories based on a GitHub username. The application retrieves user and repository data from the GitHub API and displays it in a user-friendly interface. Users can easily explore repositories and gain insights into GitHub profiles.
 
-This challenge involves implementing application using github api. 
+## Features
 
-The services that you need to use are already implemented - check out ApiService.
+GitHub Repo Finder offers the following key features:
 
-You can see details of this challenge [here](https://fyleuniverse.notion.site/fyleuniverse/Fyle-Frontend-development-challenge-cb5085e5e0864e769e7b98c694400aaa)
+1. **GitHub Repository Search:** Users can search for GitHub repositories by providing a GitHub username.
 
-__Note__ - This challenge is in angular. We work on angular frameworks & after you join we expect the same from you. Hence it is required to complete this assignement in angular itself.
+2. **User Profile Information:** The application displays detailed user information, including the user's name, bio, location, and blog.
 
-## What happens next?
+3. **Repository Listings:** Users can view repositories owned by the searched GitHub user, with information about each repository's name, description, and other details.
 
-You will hear back within 48 hours from us via email.
+4. **Server-Side Pagination:** GitHub Repo Finder implements server-side pagination for repository display. Users can choose how many repositories they want to view on one page (10 bydefault, with a maximum of 100).
 
-## Installation
+5. **Responsive Design:** The application is designed to work seamlessly on various screen sizes, including mobile, tablet, and desktop.
+   
+## Dependencies
 
-1. Fork this repository to your github account.
-2. Clone the forked repository and proceed with steps mentioned below.
+GitHub Repo Finder relies on the following key dependencies:
 
-### Install requirements
-* Install angular cli [Ref](https://angular.io/cli)
-* `npm install` in this repository 
+1. **Angular 14+:** The application is built using the Angular framework, providing a robust and maintainable structure for the frontend.
 
-## Development server
+2. **Tailwind CSS:** Tailwind CSS is used for styling the application. It offers a utility-first approach for designing user interfaces and helps maintain a consistent design system.
 
-Run `ng serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+3. **Axios:** Axios is a popular library for making HTTP requests. It is used to interact with the GitHub API and fetch user and repository data.
 
-## Further help
+4. **GitHub API:** The application interacts with the GitHub REST API to retrieve user and repository information. You can find detailed information about the GitHub API in the [official documentation](https://docs.github.com/en/rest/reference).
 
-Visit the [Angular Documentation](https://angular.io/guide/styleguide) to learn more.
-Styling is to be strictly done with [Tailwind](https://tailwindcss.com/docs/installation).
+## Getting Started
+
+### Prerequisites
+
+Before you begin, ensure you have Node.js and npm are installed on your machine. You can download them from [nodejs.org](https://nodejs.org/).
+
+### Installation
+
+1. Clone this repository to your local machine:
+```bash
+https://github.com/um500/Fyle-Frontend-development-challenge.git
+```
+2. Navigate to the project directory:
+```bash
+cd fyle-internship-challenge-23
+```
+
+3. Install project dependencies:
+```bash
+npm install
+```
+
+### Running the Application
+
+To run the GitHub Repo Finder, use the following command:
+
+```bash
+ng serve
+```
+
+This will start the development server. Open your web browser and navigate to http://localhost:4200/ to access the application.
+
+## Running Tests
+
+This project includes unit tests with 100% code coverage for user-info component and api-service to ensure code quality and reliability. To run the unit tests, you can use the following npm scripts:
+
+To run service tests:
+```bash
+npm run test:apiservice
+```
+
+To run component tests:
+```bash
+npm run test:userinfo
+```
+These commands will execute the tests and generate a code coverage report.
+
+### Testing Libraries:
+
+1. **Jasmine**: This project includes the use of Jasmine testing framework for writing unit tests. Jasmine is a widely adopted framework for testing JavaScript and TypeScript code. It provides an easy-to-read syntax for writing test cases and assertions.
+
+2. **Karma**: Karma is a test runner that executes the unit tests. It launches a web server to run tests in real browsers, ensuring that our code works correctly in different environments.
+
+3. **Angular Testing Utilities**: We leverage Angular's testing utilities, including TestBed, ComponentFixture, and async, to set up testing environments, create components, and test component behavior.
+
+## Acknowledgments
+
+It was a fun excerise! Special thanks to ![FyleHQ](https://github.com/fylein) for providing this fantastic learning opportunity.
+
